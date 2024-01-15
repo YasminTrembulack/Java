@@ -1,0 +1,8 @@
+
+RunTimeExcepetion -> Unchecked, não preciso trata-la.
+
+Exception -> Checked, precisa de um tratamento para não dar erro. Se não for tratado,
+o código nem vai rodar.
+
+Tem duas informações importantes: Message e Stacktrace
+

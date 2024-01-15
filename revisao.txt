@@ -1,50 +1,15 @@
-Ordem de complexidade: 
-O(n) O(n^2): encontrar um elemento em um array, algoritmo demora uma quantidade de seugundos,
-dependendo da entrada, proporcional a n, ele é linear, se dobrar a quantidade de dados,
-ele vai dobrar a a quantidade de tempo que demora para processar.
+compateTo, concat, endsWhit, hashCode, split, trim(tira os espaços tab enter), toLower e etc.
+Operador ternario.
 
-- Odenação: O(n lg n). 2^5 = 32 então lg^32 = 5.
+String msg = idade >= 18
+    ? "tem idade para dirigir"
+    : "nao tem idade para dirigir"
 
-- ArrayList: "add" O(1) / O(n) não importa a quantidade de dodos ele sempre vai ser rapido, 
-a unica vez que demora é para dobrar o vetor, "remove" O(n), "get" O(1).
-Para casos em que seram necessárias muitas alterações, o ArrayList não é a melhor opção.
+.equals
 
-- LinkedList: "add" O(1), "remove" O(1), "get" O(n).
+Relacionamento de classes: é quando uma classe tem referencia para outra classe;
+quando eu tenho uma lista de um tipo de classe ex: Relação de muitos para muitos uma classe Empressa
+tem uma lista<Pessoa> e pessoa é uma classe que tem uma lista<Empressa>. Um para Muitos é quando uma classe Robo tem
+uma lista<Sensores> e a classe Sensores não tem uma lista de Robos, ou seja a calsse Sensores não sabe
+quantos robos utilizam aquele sensor. um para um é quando eu tenho só uma variavel.
 
-- Stack: tipo uma pilha de pratos, quem tá no "topo" da pilha sempre vai ser o primeiro a
-sair, ou seja o ultimo add é o primeiro a sair.
-
-- Queue: o ultimo a ser adicionado é o primeiro a sair, Ex: filas de jogos.
-
-- PriorityQueue: "add" O(n).
-
-- HashSet: consegue encontra um dado muito muito rapido não importa a quantidade de dados O(1),
-mas vai gastra muita mais memória.
-
-- HashMap: basicamente um dicionario, inseri uma chave e um valor, busca muito rapido.
-
-um "for" O(n^2)
-Iterador: basicamente um obj que vai guardar o estado dessa busca. É um auxiliar,
-faz com que ele guarde a posição em que ele parou, dessa forma ele não precisa ficar 
-percorrendo varias vezes um array.
-
-public: pode ser acessado de fora das classes e dentro.
-private: nada fora da classe consegue ver, existe tanto na classe mãe tanto da classe filha, 
-mas a classe filha não tem acesso.
-protected: ela é privada para todos fora da classe, mas a classe filha consegue ter acesso.
-É possivel modificar com @override, mudar a forma como eles funcionam.
-
-@override - virtual
- - abstract: get, não pode ser instanciada, serve de base para outras classes.
-
-!= de herdar de uma classe e interface, uma classe pode herdar só de um classe, e pode herdar
-de varias interfaces. A classe perimite inplementações, pode comprometer a classe filha ter 
-dados guardados dentro, ela DEFINE O QUE VC É. Já a interface não, é como se fosse um "contrato",
-ela fala que vc PODE ser isso ou aquilo, mas vc não é obrigado, e geralmente ela é pequena e
-não pode ser instanciada.
-
-Polimorfismo: quando um entidade pode se comportar d diferentes formas dependendo da situação.
-AddRock: overload, sobrecarga, função com varios paramentros com o mesmo nome.
-Eu posso por diferentes objetos dentro de uma mesmo varivel. Eu posso usar um obj da classe mãe
-diferente do obj da classe filha, tenho algum tipo de variavel da classe mãe e coloco um obj da
-classe filha.
