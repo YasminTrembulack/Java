@@ -6,5 +6,6 @@ public class Main {
 
         int[] b = null;
         b = new int[10];
+        System.out.println(b);
     }
 }
