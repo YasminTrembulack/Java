@@ -1,0 +1,81 @@
+Questao 1:
+    No contexto das variáveis na linguagem de programação Java,
+    explique o que é atribuição por valor e atribuição por referência,
+    cite exemplos com variáveis de ambos os casos.
+
+    RESPOSTA:
+        Atribuição por valor é quando uma variavel está ligada diretamente a variavel,
+        exemplo, int, float, double. E quando é por referencia a variavel não está 
+        diretamente ligada ao valor mas sim ao endereço de referencia desse valor, exemplo,
+        Integer, Double, String. 
+
+Questao 2:
+    0 1 1 2 3 5 8 13 21 34 55
+
+Questao 3:
+    Encapsulamento serve para controlar o acesso a atributos ou metodos de uma classe,
+    um exemplo é quando deixamos os atributos da calsse privada ou seja, não queremos que qualquer
+    um tenha acesso a eles. só é possivel acessar ou aterar os atributos privados com metodos
+    get set. exemplo:
+
+    public class Exemplo{
+
+        private String nome = "Rogério";
+
+        public Exemplo(String nomeX){
+            this.nome = nomeX;
+        }
+
+        private String getNome(){
+            return this.nome;
+        }
+        private void setNome(String nomeX){
+            this.nome = nomeX;
+        }
+    }
+
+Questao 5:
+    Herança é quando criamos uma classe a partir de uma já existente, tendo proveito
+    de todas as características da classe mãe, como métodos. Ela define o que a classe é,
+    e uma classe pode herdar apenas de uma classe.
+
+    CLASSE MÃE:
+    public class Pessoa 
+    {
+        private int cpf;
+        public String nome;
+
+        public Pessoa(int cpf, String nome){
+            this.cpf = cpf;
+            this.nome = nome;
+        }  
+
+        public int getCPF(){
+            return this.cpf;
+        }
+        public void setCPF(int cpf){
+            this.cpf = cpf;
+        }
+        public Stringt getNome(){
+            return this.nome;
+        }
+        public void setNome(String nome){
+            this.nome = nome;
+        }
+    } 
+
+    CLASSE FILHA:
+    public class Estudante extends Pessoa
+    {
+        public int periodo;
+        public String faculdade;
+
+        public Pessoa(int periodo, String faculdade){
+            this.periodo = periodo;
+            this.faculdade = faculdade;
+        }  
+    } 
+
+    A classe filha estudante está herdando os atributos nome e cpf, alem dos metodos
+    get e set de cada um dos atributos.
+    
